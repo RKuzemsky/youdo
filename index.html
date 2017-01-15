@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Worker</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="R.K">
+    
+    <link rel="icon" type="image/png" href="" sizes="16x16">
+    <link rel="icon" type="image/png" href="" sizes="32x32">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="header_container">
+        <div class="header">
+          <div class="header_logo">
+            <h1>
+              <a href="index.html">
+                <img src="img/logo.png" id="logo_img">  
+              </a>
+            </h1>
+          </div>
+          <div class="header_nav">
+            <nav class="nav">
+              <ul>
+                <li class="dropdown"><a href="#" class="dropdown_a">Створити завдання <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                  <ul class="dropdown_content">
+                    <div class="li_dropdown_container">
+                      <li><a href="#">Дизайн</a></li>
+                      <li><a href="#">Прибирання</a></li>
+                      <li><a href="#">Веб</a></li>
+                      <li><a href="#">Перевезення</a></li>
+                    </div>
+                  </ul>
+                </li>
+                <li><a href="#">Всі завдання</a></li>
+                <li><a href="#">Виконавці</a></li> <!-- class="active_nav"> -->
+                <li><a href="#">Про Нас</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header_login">
+            <nav class="nav_login">
+              <ul>
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Реєстрація</a></li>
+                <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>
+                Вхід</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="top_bg_container">
+        <div class="top_bg_bg">
+          <div class="top_container">
+            <div class="top_desk">
+              <h2>Зручний спосіб замовити будь-яку послугу</h2>
+              <p>Допоможемо знайти надійного виконавця для вирішення ваших завдань</p>
+              <a href="#" class="zamovutu_bnt">Замовити послугу</a>
+              <p><span class="small_top">або</span></p>
+              <a href="#" class="vuconavcem_bnt">Стати виконавцем</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="category_container">
+        <div class="cat_cont_width">
+
+          <div class="category_item">
+            <div class="category_item_desk">
+              <a href="#"><h3>Кур'єрські послуги</h3></a>
+            </div>
+            <div class="category_item_img">
+              <a href="#"><img src="img/courier1.png"></a>
+            </div>
+            <div class="category_item_desk">
+              <ul>
+                <li><a href="#">Послуги пішого кур'єра</a></li>
+                <li><a href="#">Послуги кур'єра на легковому авто</a></li>
+                <li><a href="#">Купити і доставити</a></li>
+              </ul>
+              <a href="#" class="see_more_cat">Показати всі</a>
+            </div>
+          </div>
+
+          <div class="category_item">
+            <div class="category_item_desk">
+              <a href="#"><h3>Побутовий ремонт</h3></a>
+            </div>
+            <div class="category_item_img">
+              <a href="#"><img src="img/repair.png"></a>
+            </div>
+            <div class="category_item_desk">
+              <ul>
+                <li><a href="#">Майстер на годину</a></li>
+                <li><a href="#">Сантехнічні роботи</a></li>
+                <li><a href="#">Ремонт під ключ</a></li>
+              </ul>
+              <a href="#" class="see_more_cat">Показати всі</a>
+            </div>
+          </div>
+
+          <div class="category_item">
+            <div class="category_item_desk">
+              <a href="#"><h3>Вантажоперевезення</h3></a>
+            </div>
+            <div class="category_item_img">
+              <a href="#"><img src="img/delivery.png" class="delivery_img"></a>
+            </div>
+            <div class="category_item_desk">
+              <ul>
+                <li><a href="#">Перевезення речей, переїзди</a></li>
+                <li><a href="#">Пасажирські перевезення</a></li>
+                <li><a href="#">Будівельні вантажі та обладнання</a></li>
+              </ul>
+              <a href="#" class="see_more_cat">Показати всі</a>
+            </div>
+          </div>
+
+          <div class="category_item">
+            <div class="category_item_desk">
+              <a href="#"><h3>Прибирання</h3></a>
+            </div>
+            <div class="category_item_img">
+              <a href="#"><img src="img/cleaning.png"></a>
+            </div>
+            <div class="category_item_desk">
+              <ul>
+                <li><a href="#">Підтримуюча прибирання</a></li>
+                <li><a href="#">Генеральне прибирання</a></li>
+                <li><a href="#">Миття вікон</a></li>
+              </ul>
+              <a href="#" class="see_more_cat">Показати всі</a>
+            </div>
+          </div>
+
+          <div class="full_item_container computer_bg">
+            <div class="fic_left">
+              <h6>Комп'ютерна допомога</h6>
+              <p>Видалити віруси? Відновити дані? Відновити Windows?</p>
+              <a href="#" class="create_work_bnt">Створити завдання</a>
+            </div>
+            <div class="fic_right">
+              <img src="img/computer_icon.png">
+            </div>
+          </div>
+
+          <div class="full_item_container photo_bg">
+            <div class="fic_left">
+              <h6>Фото та відео послуги</h6>
+              <p>Допоможемо підібрати ідеального фотографа спеціально для ваших потреб!</p>
+              <a href="#" class="create_work_bnt">Створити завдання</a>
+            </div>
+            <div class="fic_right">
+              <img src="img/photo_icon.png">
+            </div>
+          </div>
+
+          <div class="simple_category_container">
+            <a href="#">
+              <div class="category_item">
+                <div class="simple_item_left">
+                  <img src="img/car_icon.png">
+                </div>
+                <div class="simple_item_right">
+                  <h6>Ремонт транспотра</h6>
+                </div>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="category_item">
+                <div class="simple_item_left">
+                  <img src="img/education.png">
+                </div>
+                <div class="simple_item_right">
+                  <h6>Репетитори і освіта</h6>
+                </div>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="category_item">
+                <div class="simple_item_left">
+                  <img src="img/techrepair.png" class="powesocet_img">
+                </div>
+                <div class="simple_item_right">
+                  <h6>Монтаж та ремонт техніки</h6>
+                </div>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="category_item">
+                <div class="simple_item_left">
+                  <img src="img/human.png">
+                </div>
+                <div class="simple_item_right">
+                  <h6>Віртуальний помічник</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="more_category_cont">
+            <a href="#">Всі категорії</a>
+          </div>
+        </div>
+      </div>
+      <div class="how_it_work_container">
+        <div class="hiw_cont_width">
+          <div class="hiw_cont_header">
+            <h2>З Worker Ви економите на послугах до 70%</h2>
+            <h2>Як це можливо?</h2>
+          </div>
+          <div class="hiw_item_cont">
+            <div class="hiw_item_left">
+              <img src="https://static.youdo.com/i/app-index/hiw-1.png">
+            </div>
+            <div class="hiw_item_right">
+              <h3>1. Створіть завдання</h3>
+              <p>Опишіть своїми словами задачу, яку потрібно виконати.</p>
+              <a href="#" class="hiw_create_link">Створити завдання</a>
+            </div>
+          </div>
+          <div class="arrow_container">
+            <img src="img/dotted.svg">
+          </div>
+          <div class="hiw_item_cont">
+            <div class="hiw_item_right">
+              <h3>2. Виконавці запропонують вам свої послуги і ціни</h3>
+              <p>Вже через пару хвилин Ви почнете отримувати пропозиції від виконавців, готових виконати ваше завдання.</p>
+            </div>
+            <div class="hiw_item_left">
+              <img src="https://static.youdo.com/i/app-index/hiw-2.png">
+            </div>
+          </div>
+          <div class="arrow_container">
+            <img src="img/dotted_one.svg">
+          </div>
+          <div class="hiw_item_cont">
+            <div class="hiw_item_left">
+              <img src="https://static.youdo.com/i/app-index/hiw-3.png">
+            </div>
+            <div class="hiw_item_right">
+              <h3>3. Виберіть кращу пропозицію</h3>
+              <p>Ви зможете вибрати підходящого виконавця, за такими критеріями:</p>
+              <div class="hiw_cat_item">
+                <p><i class="fa fa-usd" aria-hidden="true"></i> Вартість послуг</p>
+              </div>
+              <div class="hiw_cat_item">
+                <p><i class="fa fa-thumbs-up" aria-hidden="true"></i> Відгуки замовників</p>
+              </div>
+              <div class="hiw_cat_item">
+                <p><i class="fa fa-star" aria-hidden="true"></i> Рейтинг</p>
+              </div>
+            </div>
+          </div>
+          <div class="more_category_cont add_tasks_cont">
+            <a href="#">Додати завдання просто зараз</a>
+          </div>
+        </div>
+      </div>
+      <div class="perevagu_container">
+        <div class="perevagu_cont_width">
+          <div class="perevagu_header">
+            <h2>Основні переваги Worker</h2>
+          </div>
+          <div class="perevagu_item_container">
+            <div class="perevagu_item_left">
+              <i class="fa fa-usd" aria-hidden="true"></i>
+            </div>
+            <div class="perevagu_item_right">
+              <h4>Вигідні ціни</h4>
+              <p>У приватних виконавців немає витрат на офіс, рекламу, зарплату секретарю та інших витрат, які сервісні компанії зазвичай включають у вартість своїх послуг.</p>
+            </div>
+          </div>
+          <div class="perevagu_item_container">
+            <div class="perevagu_item_left">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+            </div>
+            <div class="perevagu_item_right">
+              <h4>Економія часу</h4>
+              <p>На Worker Ви можете знайти підходящого виконавця за кілька хвилин. Багато хто з них готові приступити до роботи в той же день, а іноді в той же час.</p>
+            </div>
+          </div>
+          <div class="perevagu_item_container">
+            <div class="perevagu_item_left">
+              <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            </div>
+            <div class="perevagu_item_right">
+              <h4>Перевірені виконавці</h4>
+              <p>Всі виконавці YouDo проходять процедуру верифікації, ми перевіряємо відгуки, розбираємося зі скаргами і контролюємо якість їх роботи. (!!! Це треба змінити !!!)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="orders_container">
+        <div class="orders_width">
+          <div class="orders_header">
+            <h2>Що замовляють на Worker прямо зараз</h2>
+          </div>
+          <div class="orders_item_cont">
+            <div class="oic_left">
+
+              <a href="#">
+                <div class="order_item">
+                  <div class="order_img">
+                    <img src="https://avatar.youdo.com/get.userAvatar?AvatarId=569817&AvatarType=H60W60">
+                  </div>
+                  <div class="order_desk">
+                    <h4>Купити піцу та доставити</h4>
+                    <div class="order_description">
+                      <span><i class="fa fa-user" aria-hidden="true"></i> Куземський Ростислав</span>
+                      <span><i class="fa fa-map-marker" aria-hidden="true"></i> м.Львів вул. Личаківська 100</span>
+                      <span><i class="fa fa-clock-o" aria-hidden="true"></i> 02.34.33</span><!-- Типу час який спливає. Час для виконання завдання -->
+                    </div>
+                  </div>
+                  <div class="order_price">
+                    <p>100 грн.</p>
+                  </div>
+                </div>
+              </a>  
+
+              <a href="#">
+                <div class="order_item">
+                  <div class="order_img">
+                    <img src="https://pp.vk.me/c604824/v604824933/3e56/Gz9Gk3sN7Hg.jpg">
+                  </div>
+                  <div class="order_desk">
+                    <h4>Побрити ноги</h4>
+                    <div class="order_description">
+                      <span><i class="fa fa-user" aria-hidden="true"></i> Готь Назар</span>
+                      <span><i class="fa fa-map-marker" aria-hidden="true"></i> м.Львів вул. Личаківська 100</span>
+                      <span><i class="fa fa-clock-o" aria-hidden="true"></i> 02.34.33</span><!-- Типу час який спливає. Час для виконання завдання -->
+                    </div>
+                  </div>
+                  <div class="order_price">
+                    <p>100 грн.</p>
+                  </div>
+                </div>
+              </a> 
+
+              <a href="#">
+                <div class="order_item">
+                  <div class="order_img">
+                    <img src="https://pp.vk.me/c619118/v619118662/165d5/DBtZQx8sCAA.jpg">
+                  </div>
+                  <div class="order_desk">
+                    <h4>Допомогти перевести коня</h4>
+                    <div class="order_description">
+                      <span><i class="fa fa-user" aria-hidden="true"></i> Савчин Данило</span>
+                      <span><i class="fa fa-map-marker" aria-hidden="true"></i> м.Львів вул. Личаківська 100</span>
+                      <span><i class="fa fa-clock-o" aria-hidden="true"></i> 02.34.33</span><!-- Типу час який спливає. Час для виконання завдання -->
+                    </div>
+                  </div>
+                  <div class="order_price">
+                    <p>100 грн.</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="order_item">
+                  <div class="order_img">
+                    <img src="https://avatar.youdo.com/get.userAvatar?AvatarId=569817&AvatarType=H60W60">
+                  </div>
+                  <div class="order_desk">
+                    <h4>Купити піцу та доставити</h4>
+                    <div class="order_description">
+                      <span><i class="fa fa-user" aria-hidden="true"></i> Куземський Ростислав</span>
+                      <span><i class="fa fa-map-marker" aria-hidden="true"></i> м.Львів вул. Личаківська 100</span>
+                      <span><i class="fa fa-clock-o" aria-hidden="true"></i> 02.34.33</span><!-- Типу час який спливає. Час для виконання завдання -->
+                    </div>
+                  </div>
+                  <div class="order_price">
+                    <p>100 грн.</p>
+                  </div>
+                </div>
+              </a>  
+
+              <a href="#">
+                <div class="order_item">
+                  <div class="order_img">
+                    <img src="https://pp.vk.me/c604824/v604824933/3e56/Gz9Gk3sN7Hg.jpg">
+                  </div>
+                  <div class="order_desk">
+                    <h4>Побрити ноги</h4>
+                    <div class="order_description">
+                      <span><i class="fa fa-user" aria-hidden="true"></i> Готь Назар</span>
+                      <span><i class="fa fa-map-marker" aria-hidden="true"></i> м.Львів вул. Личаківська 100</span>
+                      <span><i class="fa fa-clock-o" aria-hidden="true"></i> 02.34.33</span><!-- Типу час який спливає. Час для виконання завдання -->
+                    </div>
+                  </div>
+                  <div class="order_price">
+                    <p>100 грн.</p>
+                  </div>
+                </div>
+              </a> 
+
+              <a href="#">
+                <div class="order_item">
+                  <div class="order_img">
+                    <img src="https://pp.vk.me/c619118/v619118662/165d5/DBtZQx8sCAA.jpg">
+                  </div>
+                  <div class="order_desk">
+                    <h4>Допомогти перевести коня</h4>
+                    <div class="order_description">
+                      <span><i class="fa fa-user" aria-hidden="true"></i> Савчин Данило</span>
+                      <span><i class="fa fa-map-marker" aria-hidden="true"></i> м.Львів вул. Личаківська 100</span>
+                      <span><i class="fa fa-clock-o" aria-hidden="true"></i> 02.34.33</span><!-- Типу час який спливає. Час для виконання завдання -->
+                    </div>
+                  </div>
+                  <div class="order_price">
+                    <p>100 грн.</p>
+                  </div>
+                </div>
+              </a> 
+
+              <a href="#">
+                <div class="order_item">
+                  <div class="order_img">
+                    <img src="https://pp.vk.me/c604824/v604824933/3e56/Gz9Gk3sN7Hg.jpg">
+                  </div>
+                  <div class="order_desk">
+                    <h4>Побрити ноги</h4>
+                    <div class="order_description">
+                      <span><i class="fa fa-user" aria-hidden="true"></i> Готь Назар</span>
+                      <span><i class="fa fa-map-marker" aria-hidden="true"></i> м.Львів вул. Личаківська 100</span>
+                      <span><i class="fa fa-clock-o" aria-hidden="true"></i> 02.34.33</span><!-- Типу час який спливає. Час для виконання завдання -->
+                    </div>
+                  </div>
+                  <div class="order_price">
+                    <p>100 грн.</p>
+                  </div>
+                </div>
+              </a> 
+
+              <a href="#">
+                <div class="order_item">
+                  <div class="order_img">
+                    <img src="https://pp.vk.me/c619118/v619118662/165d5/DBtZQx8sCAA.jpg">
+                  </div>
+                  <div class="order_desk">
+                    <h4>Допомогти перевести коня</h4>
+                    <div class="order_description">
+                      <span><i class="fa fa-user" aria-hidden="true"></i> Савчин Данило</span>
+                      <span><i class="fa fa-map-marker" aria-hidden="true"></i> м.Львів вул. Личаківська 100</span>
+                      <span><i class="fa fa-clock-o" aria-hidden="true"></i> 02.34.33</span><!-- Типу час який спливає. Час для виконання завдання -->
+                    </div>
+                  </div>
+                  <div class="order_price">
+                    <p>100 грн.</p>
+                  </div>
+                </div>
+              </a> 
+
+            </div>
+            <div class="oic_right">
+              <div class="sidebar_order_item">
+                <h4>Пофарбувати автомобіль</h4>
+                <div class="order_description_sidebar">
+                  <span><i class="fa fa-user" aria-hidden="true"></i> Савчин Данило</span>
+                  <span><i class="fa fa-map-marker" aria-hidden="true"></i> м.Львів вул. Личаківська 100</span>
+                  <span><i class="fa fa-clock-o" aria-hidden="true"></i> 02.34.33</span><!-- Типу час який спливає. Час для виконання завдання -->
+                </div>
+                <div class="order_price sidebar_order_price">
+                  <p>100 грн.</p>
+                </div>
+                <p>Потрібно пофарбувати задню частину автомобіля. Маленька царапина на зсдньому бампері.</p>
+                <div class="sidebar_arder_btn_cont">
+                  <a href="#" class="sidebar_arder_btn">Перейти</a>
+                </div>
+              </div>
+              <div class="sidebar_order_item">
+                <h4>Пофарбувати автомобіль</h4>
+                <div class="order_description_sidebar">
+                  <span><i class="fa fa-user" aria-hidden="true"></i> Савчин Данило</span>
+                  <span><i class="fa fa-map-marker" aria-hidden="true"></i> м.Львів вул. Личаківська 100</span>
+                  <span><i class="fa fa-clock-o" aria-hidden="true"></i> 02.34.33</span><!-- Типу час який спливає. Час для виконання завдання -->
+                </div>
+                <div class="order_price sidebar_order_price">
+                  <p>100 грн.</p>
+                </div>
+                <p>Потрібно пофарбувати задню частину автомобіля. Маленька царапина на зсдньому бампері.</p>
+                <div class="sidebar_arder_btn_cont">
+                  <a href="#" class="sidebar_arder_btn">Перейти</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer_cont">
+          <div class="footer_top_cont">
+            <div class="footer_about">
+              <h4>Worker</h4>
+              <p>Worker позволяет быстро находить надежных исполнителей для выполнения любых бытовых и фриланс услуг. Юду помогает заказчикам экономить время и деньги, а фрилансерам находить новых клиентов и зарабатывать.</p>
+            </div>
+            <div class="footer_nav_cont">
+              <h4>Компанія</h4>
+              <ul>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Як стати виконавцем</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Як це працює(Про нас)</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Відгуки виконавців</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Відгуки замовників</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Контакти</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> FAQ</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Правила сервісу</a></li>
+              </ul>
+            </div>
+            <div class="footer_nav_cont">
+              <h4>Категорії</h4>
+              <ul>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Комп'ютерна допомога</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Побутовий ремонт</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Кур'єрські послуги</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Монтаж побутової техніки</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Ремонт побутової техніки</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Вантажоперевезення</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Freelance</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Фото та відео послуги</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Домашній персонал</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Юридичні послуги</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Прибирання</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Краса та здоров'я</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Послуги промоутерів</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Ремонт автомобілів</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Навчання та репетитори</a></li>
+              </ul>
+            </div>
+            <div class="footer_nav_cont">
+              <h4>Мова</h4>
+              <ul>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span class="active_lang">UA</span></a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <span>RUS</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_bottom_cont">
+            <h4>Слідкуйте за нами</h4>
+            <ul>
+              <li><a href="#" class="fb_link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="tw_link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="vk_link"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+            </ul>
+            <p>© 2016 Worker</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
